@@ -21,4 +21,4 @@ const auctionItemSchema = new mongoose.Schema({
 
 const AuctionItem = mongoose.model("AuctionItem", auctionItemSchema);
 
-module.export = AuctionItem;
+module.exports = AuctionItem;

@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed": "node src/index.js seed",
+    "delete": "node src/index.js delete",
+    "verify-seed": "node src/verifySeed.js",
+    "verify-delete": "node src/verifyDelete.js",
+    "test": "npm run seed && npm run verify-seed && npm run delete && npm run verify-delete"
   },
   "keywords": [],
   "author": "",
@@ -14,3 +18,4 @@
     "yargs": "^17.7.2"
   }
 }
+

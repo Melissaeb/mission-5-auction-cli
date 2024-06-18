@@ -1,5 +1,5 @@
 const connectDB = require("./db");
-const AuctionItem = require("./models/AuctionItem");
+const AuctionItem = require("../models/AuctionItem");
 
 const deleteData = async () => {
   await connectDB();
