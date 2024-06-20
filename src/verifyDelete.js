@@ -1,5 +1,6 @@
 const connectDB = require("./db");
 const AuctionItem = require("../models/AuctionItem");
+const mongoose = require("mongoose");
 
 const verifyDeletedData = async () => {
   await connectDB();
