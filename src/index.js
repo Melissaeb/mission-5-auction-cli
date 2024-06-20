@@ -1,7 +1,10 @@
+// Require the yargs module to handle command-line arguments
 const yargs = require("yargs");
 
+// Configure commands using yargs.command
 yargs
   .command({
+    // Command for seeding data into the database
     command: "seed",
     describe: "Seed data into the database",
     handler: () => {
